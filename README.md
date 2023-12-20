@@ -26,3 +26,9 @@ Błędy: Program nie obsługuje następujących błędów
     -
 
     -
+
+
+![Bez nazwy](https://github.com/mormych/modification_check_script/assets/71809600/4b55455f-6a0f-4d4a-b943-e308e8888773)
+
+![obraz](https://github.com/mormych/modification_check_script/assets/71809600/5a86d74e-3691-4cc9-8e7d-fa2b3c04ad57)
+
