@@ -5,14 +5,23 @@ Zastosowanie: Skrypt służy do sprawdzania czy pliki konkretnym katalogu zosta�
 
 Obsługa: Skrypt operuje na zmiennych:
 
-    $CurrentDate - zmienna przechowująca obecny czas w momencie uruchomienia skryptu
+    $daysToCheck= Dni w których skrypt będzie sprawdzał datę modyfikacji pliku (1 - poniedziałek...7-niedziela)
 
-    [Int32]$NoModifyTimeAllowed - zmienna przechowuje liczbę całkowitą maksymalnej ilości minut która może upłynąć bez modyfikacji pliku
+    $dirsToCheck= Katalogi rozdzielone przecinkiem, w których skrypt będzie sprawdzał pliki
 
-    $DirToCheck - zmienna przechowuje katalog w którym skrypt będzie sprawdzał czy pliki uległy modyfikacji
+    $noModifyTime= Maksymalny dopuszczany czas w którym plik nie musi być modifikowany
 
-    [string[]]$AllowedExtension - Tablica dozwolonych rozszerzeń. Pliki o innych rozszerzeniach nie będą brane pod uwagę
+    $excludedFormats= Plik będzie wykluczał następujące wskazane rozszerzenia plików.
+    
+    $port= Port dla serwera smtp.
+    
+    $smtp= Serwer, z którego będziemy wysyłali powiadomienia e-mail
 
+    $user= Adres mailowy z którego będziemy wysyłali powiadomienia
+
+    $pass= Hasło użytkownika z ktorego będziemy wysyłać maile.
+
+    $destination= Docelowi adresaci rozdzieleni przecinkiem do których będziemy wysyłać maile.
  
 
 Uruchamianie: Skrypt uruchamiamy a następnie w trybie automatycznym wykonuje sprawdzenie wszystkich plików w katalogu o dozwolonych rozszerzeniach, gdy czas modyfikacji przekroczy limit - wysyła powiadomienie
@@ -23,7 +32,7 @@ Błędy: Program nie obsługuje następujących błędów
 
     Ustawiony katalog nie istnieje
 
-    -
+    Plik konfiguracji nie pasuje do uruchomionego skryptu
 
     -
 
